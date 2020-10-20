@@ -32,5 +32,10 @@ cd
 cd catkin_ws  
 catkin_make  
 
+## 3.注意！！！在Ubuntu18.04 melodic 版本需要将
+
+PLUGINLIB_DECLARE_CLASS(router, RouterNode, RouterNode, nodelet::Nodelet); 改为 PLUGINLIB_EXPORT_CLASS(RouterNode, nodelet::Nodelet);
+
+
 
 
